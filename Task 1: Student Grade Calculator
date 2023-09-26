@@ -1,1 +1,47 @@
+import java.util.*;
 
+public class GradeCalc{
+    public static void main(String args[]){
+        System.out.println("Enter Marks obtained in all Subjects out of 100");
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Marks Of Subject 1:");
+        int Sub1=sc.nextInt();
+        System.out.println("Enter Marks of Subject 2:");
+        int Sub2=sc.nextInt();
+        System.out.println("Enter Marks of Subject 3:");
+        int Sub3=sc.nextInt();
+        System.out.println("Enter Marks of Subject 4:");
+        int Sub4=sc.nextInt();
+        System.out.println("Enter Marks of Subject 5:");
+        int Sub5=sc.nextInt();
+
+        int Sum=Sub1+Sub2+Sub3+Sub4+Sub5;
+        System.out.println("Total sum of your Marks is:" + Sum + " Out of 500");
+
+        double avg=(Sub1+Sub2+Sub3+Sub4+Sub5)/5;
+        System.out.println("Your Percentage are:" + avg + " %");
+
+        if(avg>=90 && avg<=100){
+            System.out.println("Congrats!! You got O grade.");
+        }
+        else if(avg>=80 && avg<=89){
+            System.out.println("Congrats!! You got A grade.");
+        }
+        else if(avg>=70 && avg<=79){
+            System.out.println("Congrats!! You got B grade.");
+        }
+        else if(avg>=60 && avg<=69){
+            System.out.println("Congrats!! You got C grade.");
+        }
+        else if(avg>=50 && avg<=59){
+            System.out.println("Congrats!! You got D grade.");
+        }
+        else if(avg>=40 && avg<=49){
+            System.out.println("Congrats!! You got P grade.");
+        }
+        else{
+            System.out.println("Failed!! Better luck next time.");
+        }
+
+    }
+}
